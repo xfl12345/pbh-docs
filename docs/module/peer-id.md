@@ -5,7 +5,7 @@ PeerID 过滤器会使用由 Peer 主动汇报的 PeerID 来检测。对于内�
 
 ## 配置文件
 
-规则使用[JSON规则引擎](../miso/json-engine.md)语法。
+规则使用[JSON规则引擎](../misc/json-engine.md)语法。
 
 ## 配置文件
 

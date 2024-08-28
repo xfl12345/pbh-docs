@@ -7,7 +7,7 @@ ClientName 是 BitTorrent 的一个[扩展协议](https://www.bittorrent.org/bep
 
 ## 配置文件
 
-规则使用[JSON规则引擎](../miso/json-engine.md)语法。
+规则使用[JSON规则引擎](../misc/json-engine.md)语法。
 
 ```yaml
   # 客户端名称封禁
