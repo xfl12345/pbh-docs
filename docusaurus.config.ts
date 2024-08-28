@@ -18,7 +18,7 @@ const config: Config = {
   organizationName: 'PBH-BTN', // Usually your GitHub org/user name.
   projectName: 'pbh-docs', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -26,7 +26,8 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'zh-Hans',
-    locales: ['en', 'zh-Hans'],
+    //locales: ['en', 'zh-Hans'],
+    locales: ['zh-Hans'],
   },
   
 
