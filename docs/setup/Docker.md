@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Docker
 
 Docker 部署是 PeerBanHelper 推荐的部署方式。使用 PBH 提供的示例配置文件和 CLI 命令，PBH 将能够跟随系统自动启动，并在后台运行（除非手动停止）。

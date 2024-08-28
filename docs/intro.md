@@ -2,46 +2,25 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# 欢迎
 
-Let's discover **Docusaurus in less than 5 minutes**.
+欢迎来到 PeerBanHelper 的文档。本文档将为您详细介绍 PeerBanHelper 从安装到配置的各个步骤和常见问题。
 
-## Getting Started
+## 首次使用？
 
-Get started by **creating a new site**.
+请选择您的操作系统或者部署方式，查看安装教程：
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+| Windows                    | Windows（免安装）                  | Docker (Linux/MacOS)      | Linux 自行部署           | 群晖 DSM                    |
+| -------------------------- | ---------------------------------- | ------------------------- | ------------------------ | --------------------------- |
+| [查看](./setup/Windows.md) | [查看](./setup/WindowsPortable.md) | [查看](./setup/Docker.md) | [查看](./setup/Linux.md) | [查看](./setup/Synology.md) |
 
-### What you'll need
+## 遇到困难，需要帮助？
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+看看 [常见问题](./faq.md)，如果没有帮到你的话，欢迎[加入 QQ 群](https://qm.qq.com/cgi-bin/qm/qr?k=w5as_wH2G1ReUrClreCYhR69XiNCuP65&jump_from=webapi&authKey=EyjMX7Pwc77XLM51V6FEcR7oXnG8fsUbSFqYZ4PPiEpq32vBglJn/jFvpc3LFDhn)。
 
-## Generate a new site
+## PeerBanHelper 是一个开源软件
 
-Generate a new Docusaurus site using the **classic template**.
+PeerBanHelper 是一个开源软件，您可以自由的传播和免费下载 PeerBanHelper。  
 
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+不过，PeerBanHelper 的少数几个功能可能需要您输入许可证。您可以在[爱发电](https://afdian.com/a/Ghost_chu)发电获取，或者找一位朋友借用 Ta 的许可证（别担心，你完全可以这么干😎）。  
+所有的许可证收入都将用于维护 PBH-BTN 的基础设施以及奖励我们辛勤的社区维护者们。

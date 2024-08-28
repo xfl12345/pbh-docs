@@ -1,3 +1,8 @@
+---
+sidebar_position: 1
+---
+
+
 # Windows
 
 ## 下载和安装

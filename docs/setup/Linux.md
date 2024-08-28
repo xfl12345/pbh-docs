@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # Linux 手动部署
 
 请注意：我们更推荐您使用 [Docker部署](./Docker.md)

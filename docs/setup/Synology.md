@@ -1,3 +1,7 @@
+---
+sidebar_position: 5
+---
+
 # Synology DSM 群晖
 
 ## 创建数据目录

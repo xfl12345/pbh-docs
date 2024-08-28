@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # qBittorrent
 
 PeerBanHelper 使用 qBittorrent WebAPI 与 qBittorrent 交互。本章将介绍如何为 qBittorrent 启用 WebUI 并将 PeerBanHelper 与 qBittorrent 连接。  

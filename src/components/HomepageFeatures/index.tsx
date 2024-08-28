@@ -10,32 +10,29 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: '功能强大',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        10 余个功能模块，提供对恶意 IP/Peer 的全面检测，高度可定制。
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: '开箱即用',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        跟随教程从安装到配置，整个过程只需不到 20 分钟。
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: '兼容多种下载器',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        完全支持 qBittorrent, Deluge 和 BiglyBT/Azuerus/Vuze。
       </>
     ),
   },

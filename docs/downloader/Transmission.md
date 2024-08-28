@@ -1,7 +1,15 @@
+---
+sidebar_position: 999
+---
+
 # Transmission
 
+:::danger
+
 Transmission 已被 PeerBanHepler 标记为*废弃*，你不应该继续使用它。使用 Transmission **你将不会得到任何支持**，如果你因为 Transmission 的问题到 Issues 打开 Issue/QQ群询问，则会被删除或禁言。  
-Transmission 适配器将不会得到任何功能增强或者错误修复。  
+Transmission 适配器将不会得到任何功能增强或者错误修复，并可能会在未来删除。  
+
+:::
 
 对于在 Linux 和 Docker 上使用 Transmission 的用户，你大概已经配置好了 WebUI，可以跳过前面的步骤。   
 
