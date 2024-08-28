@@ -24,9 +24,9 @@ jobs:
         with:
           version: 9
       - name: 安装依赖
-        run: pnpm install --frozen-lockfile
+        run: pnpm install
       - name: 构建网站
-        run: yarn build
+        run: pnpm build
 
       - name: 上传构建制品
         uses: actions/upload-pages-artifact@v3
