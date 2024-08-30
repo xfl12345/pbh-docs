@@ -70,7 +70,7 @@ PeerBanHelper 将借助 BiglyBT 的插件系统连接到 BiglyBT。
 
 ![step10](assets/BiglyBT-step10.png)
 
-配置 API 端口号，并记下 Token。
+配置 API 端口号，并记下 Token。**随后点击保存按钮，请务必点击一次，否则重启后 Token 将重新生成。**
 
 ![step11](assets/BiglyBT-step11.png)
 
