@@ -8,7 +8,7 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://pbh-btn.github.io/pbh-docs',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/pbh-docs/',
@@ -57,7 +57,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/PBH-BTN/pbh-docs/edit/',
+            'https://github.com/PBH-BTN/pbh-docs/edit/master',
         },
         theme: {
           customCss: './src/css/custom.css',
