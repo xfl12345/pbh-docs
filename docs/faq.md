@@ -69,3 +69,7 @@
 ![basic-auth](./assets/basic-auth.png)
 
 这个就是 Basic Auth。
+
+## 如何永久封禁 IP
+
+请使用 ![IP 黑名单](./module/ip-address-blocker.md)。
