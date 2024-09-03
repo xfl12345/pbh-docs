@@ -24,7 +24,7 @@ Sparkle 是 PBH-BTN 的官方 BTN 服务器。
 
 ## 在 PBH 上加入 BTN 网络
 
-打开 `data/config/confih.yml` 配置文件，找到下面的配置部分：
+打开 `data/config/config.yml` 配置文件，找到下面的配置部分：
 
 ```yaml
 # BitTorrent Threat Network 威胁防护网络（测试版）
