@@ -30,7 +30,7 @@ PeerBanHelper 将借助 BiglyBT 的插件系统连接到 BiglyBT。
 
 ## 安装 PBH-BiglyBT/PBH-Azureus 适配器
 
-下载 BiglyBT 适配器：[PBH-BTN/PBH-Adapter-BiglyBT](https://github.com/PBH-BTN/PBH-Adapter-BiglyBT/releases)
+下载 BiglyBT 适配器：[PBH-BTN/PBH-Adapter-BiglyBT](https://github.com/PBH-BTN/PBH-Adapter-BiglyBT/releases)，下载时请选择以 .jar 结尾的 JAR 包
 下载 Azureus/Vuze 适配器：[PBH-BTN/PBH-Adapter-Azureus](https://github.com/PBH-BTN/PBH-Adapter-Azureus/releases)
 
 接下来的过程大同小异。
@@ -39,7 +39,7 @@ PeerBanHelper 将借助 BiglyBT 的插件系统连接到 BiglyBT。
 
 ![step3](assets/BiglyBT-step3.png)
 
-选中刚刚下载的压缩包下一步安装。
+选中刚刚下载的 JAR 包下一步安装。
 
 ![step4](assets/BiglyBT-step4.png)
 
