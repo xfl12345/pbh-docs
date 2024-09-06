@@ -48,7 +48,8 @@ AviatorScript 支持如下返回值。不同的类型和值对应不同的行为
 可以查看 `src/resources/scripts` 中的脚本文件查看真实世界的示例。
 
 ## 配置文件
-``` yaml
+
+```yaml
   # 规则引擎，支持 AviatorScript 语言 - User script, support AviatorScript
   # 提供在 PBH 上自行编程编写规则的能力 - Provide programming ability on PBH
   expression-engine:
