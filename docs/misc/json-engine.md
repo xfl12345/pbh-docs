@@ -52,7 +52,7 @@ PBH 使用 JSON 规则引擎来解析规则。
 PBH 的 JSON 规则引擎提供了两个字段，分别是 `hit` 和 `miss`。默认情况下它们分别为 `TRUE` 和 `DEFAULT`，下面是一个示例：
 
 ```json
-{"method":"CONTAINS","content":"XunLei 0.0.1.9","hit": "FALSE"}
+{"method":"CONTAINS","content":"xunlei 0019","hit": "FALSE"}
 ```
 
 这段规则指定了在命中规则时，返回 `FALSE`，从而使得 迅雷 0019 被强制放行（放行的优先级要比封禁更高）。
@@ -68,7 +68,7 @@ PBH 的 JSON 规则引擎允许您进行 if 嵌套。正如之前所说，每个
 	"method": "CONTAINS",
 	"if": {
 		"method": "CONTAINS",
-		"content": "xunlei 0.0.1.9",
+		"content": "xunlei 0019",
 		"hit": "FALSE"
 	},
 	"content": "xunlei"
@@ -101,7 +101,7 @@ PBH 的 JSON 规则引擎允许您进行 if 嵌套。正如之前所说，每个
     enabled: true
     banned-client-name:
     - '{"method": "REGEX", "content": "*", "hit": "TRUE"}'
-    - '{"method": "CONTAINS", "content": "qBittorrent", "hit": "FALSE"}'
+    - '{"method": "CONTAINS", "content": "qbittorrent", "hit": "FALSE"}'
 ```
 
 这样就达到了白名单的效果。
