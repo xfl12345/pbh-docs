@@ -14,7 +14,10 @@
 
 出现这个问题多半是因为用了 Docker 容器部署导致的。在容器里使用 `127.0.0.1` 或者 `localhost` 指向的是容器内部，当然是连不上的。
 
-群晖用户：Container Manager -> 网络 -> Bridge，使用显示的网关地址连接。  
+群晖用户：Container Manager -> 容器 -> 找到 PBH 的容器 -> 向下滚动，使用显示的网关地址连接。  
+
+![dsm-gateway](./assets/dsm-network-gateway.png)
+
 其它 Docker 用户：执行 `sudo docker network inspect bridge` 命令：
 
 ```json
