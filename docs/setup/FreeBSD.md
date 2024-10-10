@@ -1,12 +1,12 @@
 ---
-sidebar_position: 9
+sidebar_position: 2
 ---
 
 # FreeBSD
 
 从`v6.4.1`之后，PeerBanHelper 提供 FreeBSD 版本安装包，目前支持`13.4`和`14.1`两个版本。
 
-请前往[发布](https://github.com/PBH-BTN/PeerBanHelper/releases)页面找到你对应版本的 FreeBSD 安装包，复制链接，输入以下命令下载：
+请前往[发布](https://github.com/PBH-BTN/PeerBanHelper/releases/latest)页面找到你对应版本的 FreeBSD 安装包，复制链接，输入以下命令下载：
 
 ```
 fetch https://github.com/PBH-BTN/PeerBanHelper/releases/download/v6.4.2/peerbanhelper-v*.*.*-FreeBSD-*.*-RELEASE.pkg
