@@ -6,6 +6,10 @@ sidebar_position: 5
 
 PeerBanHelper 使用 BitComet WebAPI 与 BitComet 交互。本章将介绍如何为 BitComet 启用 WebAPI 并将 PeerBanHelper 与 BitComet 连接。  
 
+## 提示
+
+BitComet 用户可能频繁遇到 “正在封禁的 Peer 已处于封禁列表中”，此问题是由于 BitComet 的封禁操作是异步处理的，您可以安全的忽略这个警告（除非它连续不停地一直在提示）。
+
 ## 确认版本
 
 PeerBanHelper 使用的 WebAPI 仅在 `v2.10 Beta6 [20240928]` 或者更高版本中可用。截至本文撰写时，v2.10 正式版还未发布。如果已发布正式版，请直接使用 v2.10 或者更高版本的正式版。  
