@@ -23,7 +23,7 @@ Docker 部署是 PeerBanHelper 推荐的部署方式。使用 PBH 提供的示�
 version: "3.9"
 services:
   peerbanhelper:
-    image: "镜像标签""
+    image: "镜像标签"
     restart: unless-stopped
     container_name: "peerbanhelper"
     volumes:
