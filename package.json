@@ -12,6 +12,15 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
+    "docusaurus-cf": "docusaurus --config ./docusaurus-cf-pages.config.ts",
+    "start-cf": "docusaurus start --config ./docusaurus-cf-pages.config.ts",
+    "build-cf": "docusaurus build --config ./docusaurus-cf-pages.config.ts",
+    "swizzle-cf": "docusaurus swizzle --config ./docusaurus-cf-pages.config.ts",
+    "deploy-cf": "docusaurus deploy --config ./docusaurus-cf-pages.config.ts",
+    "clear-cf": "docusaurus clear --config ./docusaurus-cf-pages.config.ts",
+    "serve-cf": "docusaurus serve --config ./docusaurus-cf-pages.config.ts",
+    "write-translations-cf": "docusaurus write-translations --config ./docusaurus-cf-pages.config.ts",
+    "write-heading-ids-cf": "docusaurus write-heading-ids --config ./docusaurus-cf-pages.config.ts",
     "typecheck": "tsc"
   },
   "dependencies": {
