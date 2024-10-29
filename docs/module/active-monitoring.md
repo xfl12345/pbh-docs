@@ -15,8 +15,11 @@ Transmission, BitComet 用户因 API 限制可能缺失部分数据。
 
 ## 配置流量告警
 
+转到 设置 -> 首选项，向下找到 “主动监控”，打开流量告警并配置每日流量告警阈值。
 
+![traffic-capping](./assets/traffic-capping.jpg)
 
+配置完成后，点击页面底部的 “保存” 按钮即可生效。
 
 ## 会记录的 Peer 的有关数据
 
@@ -34,7 +37,6 @@ Transmission, BitComet 用户因 API 限制可能缺失部分数据。
 * 此会话最后一次见到时的 Peer Flags
 * 会话开始时间
 * 会话最后更新时间
-* 
 
 ## 配置文件 
 
