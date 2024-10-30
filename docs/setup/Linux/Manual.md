@@ -31,15 +31,18 @@ OpenJDK 64-Bit Server VM (build xxxxxxx, mixed mode, sharing)
 ```
 
 ## 下载JAR
-访问 [PBH最新版版本发布页](https://github.com/PBH-BTN/PeerBanHelper/releases/latest)，向下滚动，下载 JAR 文件。
+访问 [PBH最新版版本发布页](https://github.com/PBH-BTN/PeerBanHelper/releases/latest)，向下滚动，下载 JAR 文件和 libraries.tar.gz。
+
+将解压出来的 libraries 文件夹和 jar 放在一起。
+
 使用命令来启动 PBH：
 ```shell
-java -jar -Xmx256M -XX:+UseG1GC -XX:+UseStringDeduplication -XX:+ShrinkHeapInSteps -jar 替换这段文字为JAR文件的文件名
+java -jar -Xmx512M -XX:+UseG1GC -XX:+UseStringDeduplication -XX:+ShrinkHeapInSteps -jar 替换这段文字为JAR文件的文件名
 ```
 通常情况下，PBH 会自动探测桌面环境，并在支持的情况下启用 GUI，但在部分设备上，GUI 可能会初始化失败。遇到此类情况，请手动禁用 GUI：
 
 ```shell
-java -jar -Xmx256M -XX:+UseG1GC -XX:+UseStringDeduplication -XX:+ShrinkHeapInSteps -jar 替换这段文字为JAR文件的文件名 nogui
+java -jar -Xmx512M -XX:+UseG1GC -XX:+UseStringDeduplication -XX:+ShrinkHeapInSteps -jar 替换这段文字为JAR文件的文件名 nogui
 ```
 
 即可启动 PBH。如需后台/开机运行，请自行[配置 systemd 系统服务](https://github.com/PBH-BTN/PeerBanHelper/issues/179#issuecomment-2198225784)。
