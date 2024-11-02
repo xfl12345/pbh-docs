@@ -28,11 +28,11 @@ OpenJDK 64-Bit Server VM Zulu21.36+17-CA (build 21.0.4+7-LTS, mixed mode, sharin
 
 使用命令启动 PBH：
 ```shell
-java -Djava.awt.headless=true -jar -Xmx256M -XX:+UseG1GC -XX:+UseStringDeduplication -XX:+ShrinkHeapInSteps -jar PeerBanHelper.jar nogui 
+java -Djava.awt.headless=true -Xmx512M -Xss512k -XX:+UseG1GC -XX:+UseStringDeduplication -XX:+ShrinkHeapInSteps -jar PeerBanHelper.jar nogui 
 ```
 
 ## 服务
-创建`~/Library/LaunchAgents/pbh.btn.peerbanhelper.plist`文件，并写入：
+创建`~/Library/LaunchAgents/peerbanhelper.plist`文件，并写入：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -40,17 +40,18 @@ java -Djava.awt.headless=true -jar -Xmx256M -XX:+UseG1GC -XX:+UseStringDeduplica
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>pbh.btn.peerbanhelper</string>
+    <string>peerbanhelper</string>
     <key>ProgramArguments</key>
     <array>
         <string>/usr/bin/java</string>
         <string>-Djava.awt.headless=true</string>
         <string>-jar</string>
-        <string>-Xmx256M</string>
+        <string>-Xmx512M</string>
+        <string>-Xms512k</string>
         <string>-XX:+UseG1GC</string>
         <string>-XX:+UseStringDeduplication</string>
         <string>-XX:+ShrinkHeapInSteps</string>
-        <string>/path/to/PBH/PeerBanHelper.jar</string>
+        <string>PeerBanHelper.jar</string>
         <string>nogui</string>
     </array>
     <key>RunAtLoad</key>
@@ -66,5 +67,5 @@ java -Djava.awt.headless=true -jar -Xmx256M -XX:+UseG1GC -XX:+UseStringDeduplica
 注意替换`/path/to/PBH`为jar文件的目录，完成后使用以下命令启动：
 
 ```shell
-launchctl load -w ~/Library/LaunchAgents/pbh.btn.peerbanhelper.plist
+launchctl load -w ~/Library/LaunchAgents/peerbanhelper.plist
 ```
