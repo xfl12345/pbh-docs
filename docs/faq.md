@@ -81,4 +81,4 @@
 
 ## 如何永久封禁 IP
 
-请使用 ![IP 黑名单](./module/ip-address-blocker.md)。
+请使用 [IP 黑名单](./module/ip-address-blocker.md)。

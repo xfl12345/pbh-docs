@@ -51,3 +51,32 @@ Transmission 的 IP 黑名单是外置的，但 PBH 需要为 TR 动态生成 IP
 在添加下载器后，请观察一段时间 PBH 的运行日志，如果没有出现 Transmission 黑名单设置错误的提示，则成功配置。
 
 ![step5](assets/Transmission-step5.png)
+
+## 重启用被禁用的 Transmission
+
+自 v6 开始，PBH 禁止了用户新创建 Transmission，但您可以解除这个限制。
+
+:::danger
+
+Transmission 已被 PeerBanHepler 标记为*废弃*，你不应该继续使用它。使用 Transmission **你将不会得到任何支持**，如果你因为 Transmission 的问题到 Issues 打开 Issue/QQ群询问，则会被删除或禁言。  
+Transmission 适配器将不会得到任何功能增强或者错误修复，并可能会在未来删除，这仅用于过渡用途。  
+
+:::
+
+如果你看不懂这些内容，也请不要询问或请求支持，考虑更换到其他下载器。
+
+如果是使用安装版 PBH 的，请在 vmoptions 文件（Portable版则是在 bat 中更改）中加入 `-Dpbh.downloader.transmission.i-know-transmission-is-discourage-and-could-be-removed-in-future-please-dont-show-require-take-actions-status-text-and-i-know-what-i-am-doing=true`，Docker 版则需要自行修改启动命令。
+
+然后在 `config.yml` 的 `client` 下添加如下段配置：
+
+```yaml
+your_transmission_name:
+  type: transmission
+  endpoint: http://your-transmission-webui:your-port
+  username: 用户名
+  password: 密码
+  rpc-url: /transmission/rpc
+  http-version: HTTP_1_1
+  verify-ssl: false
+  ignore-private: true
+```
