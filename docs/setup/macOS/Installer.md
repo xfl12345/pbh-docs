@@ -2,7 +2,6 @@
 sidebar_position: 1
 ---
 
-
 # 安装器
 
 ## 下载和安装

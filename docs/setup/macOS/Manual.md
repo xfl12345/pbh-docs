@@ -1,12 +1,13 @@
 ---
-sidebar_positation: 1
+sidebar_position: 2
 ---
+
 # 手动安装
 ## 安装依赖
 使用homebrew安装jdk：
 
 ```shell
-brew install --cask zulu@21
+brew install --cask zulu
 ```
 
 验证安装是否成功：
@@ -18,9 +19,9 @@ java -version
 如果安装成功，则会输出类似下列的版本号：
 
 ```plain
-openjdk version "21.0.4" 2024-07-16 LTS
-OpenJDK Runtime Environment Zulu21.36+17-CA (build 21.0.4+7-LTS)
-OpenJDK 64-Bit Server VM Zulu21.36+17-CA (build 21.0.4+7-LTS, mixed mode, sharing)
+openjdk version "23.0.1" 2024-10-15
+OpenJDK Runtime Environment Zulu23.30+13-CA (build 23.0.1+11)
+OpenJDK 64-Bit Server VM Zulu23.30+13-CA (build 23.0.1+11, mixed mode, sharing)
 ```
 
 ## 运行
