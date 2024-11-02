@@ -1,5 +1,5 @@
 ---
-sidebar_positation: 2
+sidebar_position: 2
 ---
 
 # 手动安装
