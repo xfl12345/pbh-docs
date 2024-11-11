@@ -113,6 +113,10 @@ const config: Config = {
               label: "QQ 群",
               href: "https://qm.qq.com/cgi-bin/qm/qr?k=w5as_wH2G1ReUrClreCYhR69XiNCuP65&jump_from=webapi&authKey=EyjMX7Pwc77XLM51V6FEcR7oXnG8fsUbSFqYZ4PPiEpq32vBglJn/jFvpc3LFDhn",
             },
+            {
+              label: "Telegram",
+              href: "https://t.me/+_t3Nt5GZ6bJmYjBl",
+            },
           ],
         },
         {
