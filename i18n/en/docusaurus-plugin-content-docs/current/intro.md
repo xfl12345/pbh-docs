@@ -2,17 +2,25 @@
 sidebar_position: 1
 ---
 
-# Welcome
+# 欢迎
 
 欢迎来到 PeerBanHelper 的文档。本文档将为您详细介绍 PeerBanHelper 从安装到配置的各个步骤和常见问题。
 
-## First time?
+## 首次使用？
 
 请选择您的操作系统或者部署方式，查看安装教程：
 
-| Windows                    | Windows（免安装）                  | Docker (Linux/MacOS)      | Linux 自行部署           | 群晖 DSM                    |
-| -------------------------- | ---------------------------------- | ------------------------- | ------------------------ | --------------------------- |
-| [查看](./setup/Windows.md) | [查看](./setup/WindowsPortable.md) | [查看](./setup/Docker.md) | [查看](./setup/Linux.md) | [查看](./setup/Synology.md) |
+| 系统/平台                     | 链接                               |
+| ----------------------------- | ---------------------------------- |
+| Windows 安装版                | [查看](./setup/Windows/Installer.md)         |
+| Windows 便携版                | [查看](./setup/Windows/Portable.md) |
+| Docker                        | [查看](./setup/Docker.md)          |
+| 群晖 DSM（套件）              | [查看](./setup/Synology%20DSM/Imnks.md)           |
+| 群晖 DSM（Container Manager） | [查看](./setup/Synology%20DSM/docker.md)        |
+| Linux 安装版                  | [查看](./setup/Linux/LinuxInstall4j.md)  |
+| Linux 手动部署                | [查看](./setup/Linux/Manual.md)           |
+| 包管理器 (Deb)                | [查看](./setup/Linux/Deb.md)  |
+
 
 ## 遇到困难，需要帮助？
 
