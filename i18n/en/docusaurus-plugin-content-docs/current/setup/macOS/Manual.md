@@ -2,39 +2,39 @@
 sidebar_position: 2
 ---
 
-# 手动安装
-## 安装依赖
-使用homebrew安装jdk：
+# Maunal Install
+## Install Java
+Install JDK by homebrew:
 
 ```shell
-brew install --cask zulu
+brew install --cask oracle-jdk
 ```
 
-验证安装是否成功：
+Verify
 
 ```shell
 java -version
 ```
 
-如果安装成功，则会输出类似下列的版本号：
+If the installation is successful, you will see output similar to the following:
 
 ```plain
-openjdk version "23.0.1" 2024-10-15
-OpenJDK Runtime Environment Zulu23.30+13-CA (build 23.0.1+11)
-OpenJDK 64-Bit Server VM Zulu23.30+13-CA (build 23.0.1+11, mixed mode, sharing)
+java 23.0.1 2024-10-15
+Java(TM) SE Runtime Environment (build 23.0.1+11-39)
+Java HotSpot(TM) 64-Bit Server VM (build 23.0.1+11-39, mixed mode, sharing)
 ```
 
 ## 运行
-访问 Github Release 下载 [JAR 文件](https://github.com/PBH-BTN/PeerBanHelper/releases/latest/download/PeerBanHelper.jar)。  
+Download the `jar` and `libraries.tar.gz` from [Release](https://github.com/PBH-BTN/PeerBanHelper/releases/latest)
+Unzip them into a same directory.
 
-使用命令启动 PBH：
+Run:
 ```shell
-java -Djava.awt.headless=true -Xmx512M -Xss512k -XX:+UseG1GC -XX:+UseStringDeduplication -XX:+ShrinkHeapInSteps -jar PeerBanHelper.jar nogui 
+java -Djava.awt.headless=true -Xmx512M -Xss512k -XX:+UseG1GC -XX:+UseStringDeduplication -XX:+ShrinkHeapInSteps -jar PeerBanHelper.jar nogui
 ```
 
-## 服务
-创建`~/Library/LaunchAgents/peerbanhelper.plist`文件，并写入：
-
+## Services
+touch file `~/Library/LaunchAgents/peerbanhelper.plist` with content:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -65,7 +65,7 @@ java -Djava.awt.headless=true -Xmx512M -Xss512k -XX:+UseG1GC -XX:+UseStringDedup
 </plist>
 ```
 
-注意替换`/path/to/PBH`为jar文件的目录，完成后使用以下命令启动：
+The path `/path/to/PBH` is the directory where you put the `jar` and `libraries.tar.gz`.
 
 ```shell
 launchctl load -w ~/Library/LaunchAgents/peerbanhelper.plist

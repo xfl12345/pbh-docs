@@ -22,7 +22,7 @@ sidebar_position: 6
 
 ## 获取版本标签
 
-首先访问 [PBH最新版版本发布页](https://github.com/PBH-BTN/PeerBanHelper/releases/latest)，向下滚动，找到如图所示的 “Docker 用户” 章节，并复制镜像标签备用。
+首先访问 [PBH最新版版本发布页](https://github.com/PBH-BTN/PeerBanHelper/releases/latest)，找到如图所示的 “Docker 用户” 章节，并复制镜像标签备用。
 
 ![image-tag](../assets/docker-tag.png)
 

@@ -8,7 +8,7 @@ Docker is the recommended deployment method for PeerBanHelper on Linux. Using th
 
 ## Get the version tags
 
-First visit the [PBH latest version release page](https://github.com/PBH-BTN/PeerBanHelper/releases/latest), scroll down and find the “Docker Users” section as shown and copy the image tag for backup.
+First visit the [PBH latest version release page](https://github.com/PBH-BTN/PeerBanHelper/releases/latest), find the “Docker Users” section as shown and copy the image tag for backup.
 
 ![image-tag](./assets/docker-tag.png)
 

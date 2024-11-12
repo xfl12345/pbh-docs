@@ -1,14 +1,14 @@
 ---
 sidebar_position: 3
-sidebar_label: 安装程序(不推荐)
+sidebar_label: Installer(not recommended)
 ---
 
 
-# 安装程序
+# Installer
+:::tip
+It does not meet the [FSH](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard) standard, [Docker](../Docker.md) is recmmended for Linux users.
+:::
 
-> 请注意：我们更推荐您使用 [Docker部署](../Docker.md)
+For Redhat-based user, please go to [Releases](https://github.com/PBH-BTN/PeerBanHelper/releases) to download a `.rpm` package, for other user please download the `.sh` file.
 
-Redhat 系用户请前往 [Releases](https://github.com/PBH-BTN/PeerBanHelper/releases)下载`.rpm`软件包，对于其他 Linux 用户请 下载以 `.sh` 结尾的安装程序。
-
-
-默认使用 CLI 安装向导，如果您的 Linux 安装支持桌面环境，将启动图形安装程序，操作与 Windows 版一致。
+The installer will use CLI by default, if your Linux installation supports a desktop environment, the graphical installer will be started, just like the Windows version.
