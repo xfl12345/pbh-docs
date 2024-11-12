@@ -30,7 +30,7 @@ OpenJDK 64-Bit Server VM (build xxxxxxx, mixed mode, sharing)
 ```
 
 ## 下载安装
-访问 [PBH最新版版本发布页](https://github.com/PBH-BTN/PeerBanHelper/releases/latest)，向下滚动，下载 DEB 文件。
+访问 [PBH最新版版本发布页](https://github.com/PBH-BTN/PeerBanHelper/releases/latest) 下载 DEB 文件。
 
 安装 DEB 文件：
 

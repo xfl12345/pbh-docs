@@ -4,9 +4,9 @@ sidebar_position: 2
 
 
 # 手动部署
-
+:::tip
 请注意：我们更推荐您使用 [Docker部署](../Docker.md))
-
+:::
 ## 安装依赖
 
 使用你的包管理器安装 OpenJDK 21 或更高版本（此处以 apt 为例）：
@@ -31,7 +31,7 @@ OpenJDK 64-Bit Server VM (build xxxxxxx, mixed mode, sharing)
 ```
 
 ## 下载JAR
-访问 [PBH最新版版本发布页](https://github.com/PBH-BTN/PeerBanHelper/releases/latest)，向下滚动，下载 JAR 文件和 libraries.tar.gz。
+访问 [PBH最新版版本发布页](https://github.com/PBH-BTN/PeerBanHelper/releases/latest)，下载 JAR 文件和 libraries.tar.gz。
 
 将解压出来的 libraries 文件夹和 jar 放在一起。
 
