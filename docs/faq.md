@@ -16,7 +16,7 @@
 
 请先退出，或者[更改 WebUI 端口](./network/http-server.md#更改-webui-端口)
 
-## 127.0.0.1 或者 localhost 连不上下载器
+## 127.0.0.1 或者 localhost 连不上下载器 (ConnectException: null)
 
 出现这个问题多半是因为用了 Docker 容器部署导致的。在容器里使用 `127.0.0.1` 或者 `localhost` 指向的是容器内部，当然是连不上的。
 
