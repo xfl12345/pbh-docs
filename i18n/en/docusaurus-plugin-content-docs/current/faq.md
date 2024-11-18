@@ -76,6 +76,10 @@ Some tutorials will let you add an extra layer of username and password for secu
 
 This is Basic Auth.
 
+# In statistical data, why is the ban count higher than the access count?
+
+When a Peer connects and generates traffic, it is counted as one access. If the Peer is banned before generating traffic (for example, during the handshake stage), it is only counted as one ban.
+
 ## How to permanently ban IP
 
 Consider to use [IP Blacklist](./module/ip-address-blocker.md).
