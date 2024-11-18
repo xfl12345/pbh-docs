@@ -16,7 +16,7 @@
 
 请先退出，或者[更改 WebUI 端口](./network/http-server.md#更改-webui-端口)
 
-## 127.0.0.1 或者 localhost 连不上下载器
+## 127.0.0.1 或者 localhost 连不上下载器 (ConnectException: null)
 
 出现这个问题多半是因为用了 Docker 容器部署导致的。在容器里使用 `127.0.0.1` 或者 `localhost` 指向的是容器内部，当然是连不上的。
 
@@ -78,6 +78,10 @@
 ![basic-auth](./assets/basic-auth.png)
 
 这个就是 Basic Auth。
+
+## 统计数据中封禁计数比访问计数多？
+
+当一个 Peer 连接**并产生流量**时，计为一次访问。如果 Peer 在产生流量之前就被封禁（比如处于握手阶段），则只记为一次封禁。
 
 ## 如何永久封禁 IP
 
