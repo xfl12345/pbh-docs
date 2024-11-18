@@ -66,7 +66,9 @@ You can click the edit button of the downloader, and then click OK to save. PBH 
 Non-incremental banning: each time a new IP needs to be banned, the entire IP blacklist is directly replaced. This can easily cause the downloader to freeze on qBittorrent.
 Incremental banning: each time a new IP needs to be banned, the banPeer API is used to incrementally add banned IPs; when unbanning, the entire IP blacklist is still directly replaced.
 
-## What is SSL certificate verification? If the entered address is an HTTPS address and this switch is enabled, the validity of the SSL certificate will be verified. If the certificate is invalid, an error will be reported to ensure security. If it is turned off, all SSL certificates will be trusted.
+## What is SSL certificate verification?
+
+If the entered address is an HTTPS address and this switch is enabled, the validity of the SSL certificate will be verified. If the certificate is invalid, an error will be reported to ensure security. If it is turned off, all SSL certificates will be trusted.
 
 ## What is Basic Auth?
 
