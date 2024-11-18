@@ -340,5 +340,29 @@
   "theme.tags.tagsPageTitle": {
     "message": "标签",
     "description": "The title of the tag list page"
+  },
+  "功能强大": {
+    "message": "功能强大"
+  },
+  "10 余个功能模块，提供对恶意 IP/Peer 的全面检测，高度可定制。": {
+    "message": "10 余个功能模块，提供对恶意 IP/Peer 的全面检测，高度可定制。"
+  },
+  "开箱即用": {
+    "message": "开箱即用"
+  },
+  "跟随教程从安装到配置，整个过程只需不到 20 分钟。": {
+    "message": "跟随教程从安装到配置，整个过程只需不到 20 分钟。"
+  },
+  "兼容多种下载器": {
+    "message": "兼容多种下载器"
+  },
+  "完全支持 qBittorrent, Deluge 和 BiglyBT/Azuerus/Vuze。": {
+    "message": "完全支持 qBittorrent, Deluge 和 BiglyBT/Azuerus/Vuze。"
+  },
+  "立刻开始了解 PeerBanHelper": {
+    "message": "立刻开始了解 PeerBanHelper"
+  },
+  "自动封禁不受欢迎、吸血和异常的 BT 客户端，并支持自定义规则": {
+    "message": "自动封禁不受欢迎、吸血和异常的 BT 客户端，并支持自定义规则"
   }
 }

@@ -1,42 +1,42 @@
-# 国际化
+#  Internationalization
 
-PeerBanHelper 默认情况下其 UI 语言会跟随系统语言，而 WebUI 语言则跟随浏览器语言。
+By default, the UI language of PeerBanHelper follows the system language, while the WebUI language follows the browser language.
 
-## 更改 UI 语言
+## Change UI language
 
-要更改 UI 语言，则可以通过修改配置文件完成：
+To change the UI language, you can do it by modifying the configuration file:
 
 ```yaml
-# 设置程序语言
 # Set the program language
-# default 跟随操作系统 (Follow the operating system)
+# Set the program language
+# default Follow the operating system
 # en_us English (US)
-# zh_cn Chinese Simplified (简体中文)
+# zh_cn Chinese Simplified (Simplified Chinese)
 language: default
 ```
 
-在给定的语言不受支持时，将使用 English 进行回退。  
-在给定的语言受支持，但缺失文本时，将使用先使用 English 然后再使用 fallback 语言（默认为：简体中文）回退。
+When the given language is not supported, English will be used as a fallback.
+When the given language is supported but the text is missing, English will be used first and then the fallback language (default: Simplified Chinese) will be used.
 
-## 自订语言
+## Custom language
 
-在 `data/lang/overrides` 下存在多个使用语言代码命名的目录。如果没有你需要自订语言的目录，则可以手动创建，PBH 会自动识别它。  
-在打开其中的文件后，你大概注意到：整个文件都是空的。这是因为 PBH 使用了一种名为 “覆盖加载” 的加载逻辑。也就是先从 JAR 内部的语言文件加载，然后再使用 overrides 目录中的文件，在内部语言的基础上覆盖文件中有的词条。
+There are several directories named with language codes under `data/lang/overrides`. If there is no directory for the language you need to customize, you can manually create it, and PBH will automatically recognize it.
+After opening one of the files, you probably notice: the whole file is empty. This is because PBH uses a loading logic called "override loading". That is, it first loads the language file from inside the JAR, and then uses the files in the overrides directory to override the entries in the internal language file.
 
-这样，当我们更新翻译文件时，使用旧的翻译文件的用户不会出现因缺失词条而导致显示故障的问题。
+In this way, when we update the translation file, users using the old translation file will not encounter display problems due to missing entries.
 
-## 使用覆盖语言系统
+## Use the override language system
 
-很简单，就把你需要修改的内容写进去就行，就像这样：
+It's simple, just write the content you need to modify, like this:
 
-源文本：
+Original text:
 
 ```yaml
-IP_BAN_RULE_UPDATE_TYPE_AUTO: "自动更新"
+IP_BAN_RULE_UPDATE_TYPE_AUTO: "Automatic update"
 ```
 
-写入覆盖文件的新文本：
+New text written into the override file:
 
 ```yaml
-IP_BAN_RULE_UPDATE_TYPE_AUTO: "它自己更新"
+IP_BAN_RULE_UPDATE_TYPE_AUTO: "It updates itself"
 ```
