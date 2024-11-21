@@ -86,3 +86,12 @@
 ## 如何永久封禁 IP
 
 请使用 [IP 黑名单](./module/ip-address-blocker.md)。
+
+## 为什么我无法编辑自定义脚本？什么是“只读模式”？
+
+出于安全原因考虑，脚本编辑功能会拒绝来自互联网的请求，这可以在 Token 泄漏的情况下保护您的设备。
+
+如果您处于一定原因一定要在互联网编辑脚本，并理解 **Token 泄漏后黑客可以在你的设备上执行任何代码**，你可以在启动时添加以下`flag`：
+```
+java -Dpbh.please-disable-safe-network-environment-check-i-know-this-is-very-dangerous-and-i-may-lose-my-data-and-hacker-may-attack-me-via-this-endpoint-and-steal-my-data-or-destroy-my-computer-i-am-fully-responsible-for-this-action-and-i-will-not-blame-the-developer-for-any-loss ...
+```

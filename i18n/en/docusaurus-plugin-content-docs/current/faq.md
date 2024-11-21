@@ -85,3 +85,12 @@ When a Peer connects and generates traffic, it is counted as one access. If the 
 ## How to permanently ban IP
 
 Consider to use [IP Blacklist](./module/ip-address-blocker.md).
+
+## Why can't I edit custom scripts? What is "read-only mode"?
+
+For security reasons, the script editing function will reject requests from the Internet, which can protect your device in the event of a Token leak.
+
+If for some reason you have to edit scripts on the Internet and understand that **hackers can execute any code on your device after a Token leak**, you can add the following `flag` at startup:
+```
+java -Dpbh.please-disable-safe-network-environment-check-i-know-this-is-very-dangerous-and-i-may-lose-my-data-and-hacker-may-attack-me-via-this-endpoint-and-steal-my-data-or-destroy-my-computer-i-am-fully-responsible-for-this-action-and-i-will-not-blame-the-developer-for-any-loss ...
+```
