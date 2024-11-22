@@ -22,6 +22,8 @@ version: "3.9"
 services:
   peerbanhelper:
     image: ghostchu/peerbanhelper:latest
+    # 若使用镜像源则不能使用 latest 标签，请使用具体版本号，否则可能会导致拉取到的镜像是远古版本
+    # image: registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:<具体的版本号>  
     pull_policy: always
     restart: unless-stopped
     container_name: "peerbanhelper"
@@ -46,6 +48,8 @@ services:
 
 ```bash
 sudo docker run -d --pull always --name peerbanhelper --stop-timeout -p 9898:9898 -v ${PWD}/:/app/data/ ghostchu/peerbanhelper:latest
+# 若使用镜像源则不能使用 latest 标签，请使用具体版本号，否则可能会导致拉取到的镜像是远古版本
+# sudo docker run -d --pull always --name peerbanhelper --stop-timeout -p 9898:9898 -v ${PWD}/:/app/data/ registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:<具体的版本号>
 ```
 
 WebUI 端口将在 9898 开放。
