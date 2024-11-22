@@ -12,7 +12,7 @@ First visit the [PBH latest version release page](https://github.com/PBH-BTN/Pee
 
 ![image-tag](./assets/docker-tag.png)
 
-**DO NOT** use the latest tag, as it may be cached.
+Please **DO NOT** use the `latest` tag if you choose to use `registry.cn-hangzhou.aliyuncs.com` as Docker registry, else you may get a stale version because it has been cached.
 
 ## Using Docker Compose
 
@@ -25,6 +25,7 @@ services:
     image: "<tags>"
     restart: unless-stopped
     container_name: "peerbanhelper"
+    pull_policy: always
     volumes:
       - ./:/app/data
     ports:
@@ -48,6 +49,6 @@ The webui will be opened at `9898`.
 
 Create a directory as the data storage location for PBH, and switch the working directory to this location.
 ```shell
-sudo docker run -d --name peerbanhelper --stop-timeout -p 9898:9898 -v ${PWD}/:/app/data/ <tags>
+sudo docker run -d --pull always --name peerbanhelper --stop-timeout -p 9898:9898 -v ${PWD}/:/app/data/ <tags>
 ```
 The webui will be opened at `9898`.
