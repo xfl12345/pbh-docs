@@ -12,7 +12,7 @@ Docker 部署是 PeerBanHelper 推荐的部署方式。使用 PBH 提供的示�
 
 ![image-tag](./assets/docker-tag.png)
 
-**不要拉取 latest 镜像，由于镜像缓存的问题，你可能会得到一个远古/开发版本，出问题将无法获得支持。**
+**如果您是通过 Docker CLI 启动的并且使用的标签是 latest ，您在更新最新版的时候需要手动执行 `docker pull ghostchu/peerbanhelper:latest` 来强制跳过缓存**
 
 ## 使用 Docker Compose 部署
 
@@ -23,7 +23,8 @@ Docker 部署是 PeerBanHelper 推荐的部署方式。使用 PBH 提供的示�
 version: "3.9"
 services:
   peerbanhelper:
-    image: "镜像标签"
+    image: ghostchu/peerbanhelper:latest
+    pull_policy: always
     restart: unless-stopped
     container_name: "peerbanhelper"
     volumes:
@@ -44,7 +45,7 @@ services:
 执行命令：
 
 ```shell
-sudo docker run -d --name peerbanhelper --stop-timeout -p 9898:9898 -v ${PWD}/:/app/data/ 将此段文字替换为你刚刚获取的镜像标签
+sudo docker run -d --pull always --name peerbanhelper --stop-timeout -p 9898:9898 -v ${PWD}/:/app/data/ 将此段文字替换为你刚刚获取的镜像标签
 ```
 
 WebUI 端口将在 9898 开放。
