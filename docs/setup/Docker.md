@@ -44,8 +44,8 @@ services:
 找一个合适的位置创建一个目录作为 PBH 的数据存放位置，并将工作目录切换到此位置。
 执行命令：
 
-```shell
-sudo docker run -d --pull always --name peerbanhelper --stop-timeout -p 9898:9898 -v ${PWD}/:/app/data/ 将此段文字替换为你刚刚获取的镜像标签
+```bash
+sudo docker run -d --pull always --name peerbanhelper --stop-timeout -p 9898:9898 -v ${PWD}/:/app/data/ ghostchu/peerbanhelper:latest
 ```
 
 WebUI 端口将在 9898 开放。
