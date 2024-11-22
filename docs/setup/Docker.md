@@ -25,6 +25,8 @@ services:
     pull_policy: always
     restart: unless-stopped
     container_name: "peerbanhelper"
+    tmpfs:
+      - /tmp
     volumes:
       - ./:/app/data
     ports:
@@ -45,7 +47,7 @@ services:
 执行命令：
 
 ```bash
-sudo docker run -d --pull always --name peerbanhelper --stop-timeout -p 9898:9898 -v ${PWD}/:/app/data/ ghostchu/peerbanhelper:latest
+sudo docker run -d --pull always --name peerbanhelper --stop-timeout -p 9898:9898 --tmpfs /tmp -v ${PWD}/:/app/data/ ghostchu/peerbanhelper:latest
 ```
 
 WebUI 端口将在 9898 开放。
